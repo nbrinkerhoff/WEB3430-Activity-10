@@ -1,0 +1,158 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.container {
+  max-width: 90%;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: maroon;
+  color: white;
+}
+
+.container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+
+.container nav ul > li {
+  margin: 0px;
+  padding: 0px 10px;
+}
+
+.container nav ul > li a {
+  text-decoration: none;
+  color: white;
+}
+
+.container nav ul:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container main > .card {
+  width: 30%;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin: 10px;
+}
+
+.container main > .card img {
+  width: 100%;
+}
+
+.container main > .card .extra {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding: 10px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: center;
+}
+
+.container main > .card .extra > li:not(:first) {
+  padding-left: 20px;
+}
+
+button.primary {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background: maroon;
+  color: white;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 20px 0 50px 20px;
+}
+
+form {
+  width: 90%;
+}
+
+form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form .field label {
+  width: 15%;
+  padding: 5px;
+  font-weight: bold;
+}
+
+form .field .control {
+  width: 85%;
+}
+
+form .field .control input, form .field .control textarea {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  width: 60%;
+}
+
+form .field .control p {
+  margin: 5px 0;
+  font-size: 10px;
+  color: red;
+}
+
+.pull-content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=main.css.map */
